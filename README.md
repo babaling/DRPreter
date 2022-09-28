@@ -5,9 +5,7 @@ DRPreter: Interpretable Anticancer Drug Response Prediction Using Knowledge-Guid
 ###  source codes:
 + preprocess.py: create data in pytorch format
 + utils.py: include TestbedDataset used by create_data.py to create data, performance measures and functions to draw loss, pearson by epoch.
-+ models/ginconv.py, gat.py, gat_gcn.py, and gcn.py: proposed models GINConvNet, GATNet, GAT_GCN, and GCNNet receiving graphs as input for drugs.
-+ training.py: train a GraphDRP model.
-+ saliancy_map.py: run this to get saliency value.
++ main.py: train a GraphDRP model.
 
 
 ## Dependencies
