@@ -1,11 +1,11 @@
-# DRPreter
+# DRPreter (Drug Response Prediction and interPRETER)
 DRPreter: Interpretable Anticancer Drug Response Prediction Using Knowledge-Guided Graph Neural Networks and Transformer
 
 
 ###  source codes:
-+ preprocess.py: create data in pytorch format
-+ utils.py: include TestbedDataset used by create_data.py to create data, performance measures and functions to draw loss, pearson by epoch.
-+ main.py: train a GraphDRP model.
++ preprocess.py:
++ utils.py:
++ main.py:
 
 
 ## Dependencies
