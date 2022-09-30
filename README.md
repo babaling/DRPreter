@@ -1,4 +1,4 @@
-# DRPreter (Drug Response Prediction and interPRETER)
+# DRPreter (Drug Response Prediction and interpreTER)
 DRPreter: Interpretable Anticancer Drug Response Prediction Using Knowledge-Guided Graph Neural Networks and Transformer
 
 
