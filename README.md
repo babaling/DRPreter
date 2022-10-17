@@ -2,21 +2,6 @@
 DRPreter: Interpretable Anticancer Drug Response Prediction Using Knowledge-Guided Graph Neural Networks and Transformer
 
 
-###  source codes:
-+ preprocess.py:
-+ utils.py:
-+ main.py:
-
-
-## Dependencies
-+ [Torch](https://pytorch.org/)
-+ [Pytorch_geometric](https://github.com/rusty1s/pytorch_geometric)
-+ [Rdkit](https://www.rdkit.org/)
-+ [Matplotlib](https://matplotlib.org/)
-+ [Pandas](https://pandas.pydata.org/)
-+ [Numpy](https://numpy.org/)
-+ [Scipy](https://docs.scipy.org/doc/)
-
 
 ## 1. Create data in pytorch format
 ```sh
@@ -34,5 +19,5 @@ python main.py --mode train
 
 ## 3. Interpret model with trained model
 ```sh
-python main.py --mode test
+python main.py --mode test --seed 0
 ```
