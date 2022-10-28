@@ -1,7 +1,7 @@
 # DRPreter (Drug Response PREdictor and interpreTER)
 DRPreter: Interpretable Anticancer Drug Response Prediction Using Knowledge-Guided Graph Neural Networks and Transformer
 
-[Overview.pdf](https://github.com/babaling/DRPreter/files/9885233/Overview.pdf)
+![DRPreter](https://user-images.githubusercontent.com/68269057/198502117-785291dd-af73-40d3-8fed-0e8881404119.png)
 
 ## 1. Create data in pytorch format
 ```sh
