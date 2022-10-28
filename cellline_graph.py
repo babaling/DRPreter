@@ -26,13 +26,9 @@ def ensp_to_hugo_map():
 def save_cell_graph(gene_path, save_path, type):
     if os.path.exists(os.path.join(save_path, 'cell_feature_std_{}.npy'.format(type))):
         print('already exists!')
-        # cell_dict = np.load(os.path.join(save_path, 'cell_feature_std_{}.npy'.format(type)))
     else:
         # os.makedirs(save_path)
-        # exp = pd.read_csv(os.path.join(gene_path, 'baseline_exp.csv'), index_col=0)
         exp = pd.read_csv(os.path.join(gene_path, 'CCLE_2369_EXP.csv'), index_col=0)
-        # cn = pd.read_csv(os.path.join(gene_path, 'baseline_cn.csv'), index_col=0)
-        # mu = pd.read_csv(os.path.join(gene_path, 'baseline_mut.csv'), index_col=0)
         index = exp.index
         columns = exp.columns
 
@@ -90,7 +86,7 @@ def save_cell_graph(gene_path, save_path, type):
         return gene_list
 
 
-def get_STRING_graph(gene_path, ppi_threshold, type, gene_list):
+def get_STRING_edges(gene_path, ppi_threshold, type, gene_list):
     save_path = os.path.join(gene_path, 'edge_index_{}_{}.npy'.format(ppi_threshold, type))
     if not os.path.exists(save_path):
         # gene_list
@@ -125,14 +121,14 @@ def get_STRING_graph(gene_path, ppi_threshold, type, gene_list):
 
 if __name__ == '__main__':
     rpath = './'
-    gene_path = rpath+'Data/CELL'
-    save_path = rpath+'Data/CELL'
+    gene_path = rpath+'Data/Cell'
+    save_path = rpath+'Data/Cell'
     with open(gene_path+'/34pathway_score990.pkl', 'rb') as file:
         kegg = pickle.load(file)
 
   
-    type = 'disjoint'  # type = joint, disjoint
+    type = 'disjoint'  # type = joint, disjoint, ...
     
 
     genelist = save_cell_graph(gene_path, save_path, type=type)
-    get_STRING_graph(gene_path, ppi_threshold='PPI_990', type=type, gene_list=genelist)
+    get_STRING_edges(gene_path, ppi_threshold='PPI_990', type=type, gene_list=genelist)
