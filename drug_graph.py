@@ -99,11 +99,11 @@ def smiles2graph(mol):
 
 
 def save_drug_graph():
-    smiles = pd.read_csv('data/Drugs/drug_smiles.csv')
+    smiles = pd.read_csv('Data/Drug/drug_smiles.csv')
     drug_dict = {}
     for i in range(len(smiles)):
         drug_dict[smiles.iloc[i, 0]] = smiles2graph(smiles.iloc[i, 2])
-    np.save('data/Drugs/drug_feature_graph.npy', drug_dict)
+    np.save('Data/Drug/drug_feature_graph.npy', drug_dict)
     return drug_dict
 
 
