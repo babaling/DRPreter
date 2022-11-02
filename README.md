@@ -9,8 +9,6 @@ python preprocess.py
 ```
 
 
-This returns file pytorch format (.pt) stored at data/processed including training, validation, test set.
-
 ## 2. Train a model
 ```sh
 python main.py --mode train
