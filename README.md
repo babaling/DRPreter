@@ -5,23 +5,23 @@ DRPreter: Interpretable Anticancer Drug Response Prediction Using Knowledge-Guid
 
 ## 1. Create cell-line data
 ```sh
-python cell_line_graph.py
+python3 cellline_graph.py
 ```
 
 
 ## 2. Create drug data
 ```sh
-python drug_graph.py
+python3 drug_graph.py
 ```
 
 
 ## 3. Train a model
 ```sh
-python main.py --mode train
+python3 main.py --mode train
 ```
 
 
 ## 4. Interpret model with trained model
 ```sh
-python main.py --mode test --seed 0
+python3 main.py --mode test --seed 0
 ```
